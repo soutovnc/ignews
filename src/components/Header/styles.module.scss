@@ -34,10 +34,10 @@
         color: var(--white);
       }
 
-      // &.active::before {
-      //   content: '</  ';
-      //   color: var(--yellow-500);
-      // }
+      &.active::before {
+        content: '</  ';
+        color: var(--yellow-500);
+      }
 
       &.active {
         color: var(--white);
