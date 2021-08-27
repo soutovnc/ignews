@@ -56,6 +56,7 @@ export default function PostPreview({ post }: PostPreviewProps) {
 }
 
 export const getStaticPaths = () => {
+  //
   return {
     paths: [],
     fallback: 'blocking'
@@ -83,6 +84,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
       post,
-    }
+    },
+    redirect: 60 * 30,
   }
 }
